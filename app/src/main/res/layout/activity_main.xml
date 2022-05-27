@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <!-- vertical -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".10"
+        android:orientation="vertical"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".90"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".50"
+        android:orientation="vertical"
+        />
+
+
+    <!--______________________________________________________________ -->
+    <!-- horizontal -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".05"
+        android:orientation="horizontal"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+
+    <!-- _____________________________________________________________________________________ -->
+
+    <!-- barra de pesquisa -->
+    <EditText
+        android:layout_width="862px"
+        android:layout_height="wrap_content"
+        android:text="Digite a Placa..."
+        android:background="@color/pesquisa"
+        app:layout_constraintLeft_toRightOf="@id/v1"
+        app:layout_constraintTop_toBottomOf="@id/h1"
+        app:layout_constraintRight_toLeftOf="v3"
+        app:layout_constraintBottom_toTopOf="@id/h2">
+
+    </EditText>
+
+    <!-- Logo -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Logo"
+        app:layout_constraintLeft_toRightOf="@id/v3"
+        app:layout_constraintTop_toBottomOf="@id/h5">
+
+    </ImageView>
+
+    <!-- Total de Vagas -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total de Vagas "
+        app:layout_constraintTop_toBottomOf="@id/h6"
+        app:layout_constraintLeft_toRightOf="@+id/v1"
+        app:layout_constraintBottom_toTopOf="@id/h7"
+        app:layout_constraintRight_toLeftOf="@id/v3">
+
+    </TextView>
+
+    <!-- Vagas Abertas -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vagas Abertas "
+        app:layout_constraintTop_toBottomOf="@id/h6"
+        app:layout_constraintBottom_toTopOf="@id/h7"
+        app:layout_constraintLeft_toRightOf="@+id/v3"
+        app:layout_constraintRight_toLeftOf="@id/v2">
+
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
